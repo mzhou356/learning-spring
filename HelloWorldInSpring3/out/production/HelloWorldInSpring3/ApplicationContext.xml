@@ -3,10 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id="country" class="org.arpit.javapostsforlearning.Country">
+    <bean id="CountryBean" class="org.arpit.javapostsforlearning.Country">
         <property name="countryName" value="India"/>
+        <property name="capital" ref="CapitalBean"/>
     </bean>
-    <bean id="capital" class="org.arpit.javapostsforlearning.Capital">
+    <bean id="CapitalBean" class="org.arpit.javapostsforlearning.Capital">
         <property name="capitalName" value="Delhi"/>
     </bean>
 </beans>
