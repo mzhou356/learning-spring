@@ -6,7 +6,7 @@
     <bean id="country" class="org.arpit.java2blog.Country" autowire="constructor">
         <constructor-arg index="0" type="java.lang.String" value="India" />
     </bean>
-    <bean id="capitalObj" class="org.arpit.java2blog.Capital">
+    <bean id="capital" class="org.arpit.java2blog.Capital">
         <property name="capitalName" value="Delhi" />
     </bean>
 </beans>
