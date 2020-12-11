@@ -1,13 +1,11 @@
 package org.arpit.java2blog;
 
-public class Country {
+import org.arpit.java2blog.Capital;
+
+public class CountryTwo {
     String countryName;
     Capital capital;
 
-    public Country(String countryName, Capital capital) {
-        this.countryName = countryName;
-        this.capital = capital;
-    }
     public String getCountryName() {
         return countryName;
     }
@@ -20,7 +18,12 @@ public class Country {
         return capital;
     }
 
+    public String output(){
+        return getCountryName()+"'s capital is "+capital.getCapitalName();
+    }
+
     public void setCapital(Capital capital){
         this.capital = capital;
     }
+
 }
