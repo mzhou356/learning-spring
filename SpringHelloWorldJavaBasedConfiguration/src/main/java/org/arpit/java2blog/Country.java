@@ -23,4 +23,5 @@ public class Country {
     public void setCapital(Capital capital){
         this.capital = capital;
     }
+
 }
